@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+body {
+	background-image: url(pictures/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: rgb(180, 193, 202);
+}
+img{
+	box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+				0 2px 2px rgba(0,0,0,0.11), 
+				0 4px 4px rgba(0,0,0,0.11), 
+				0 8px 8px rgba(0,0,0,0.11), 
+				0 16px 16px rgba(0,0,0,0.11), 
+				0 32px 32px rgba(0,0,0,0.11);
+}
+.container, .main-header, .header, .btn{
+	display: flex;
+	justify-content: center;
+
+}
+.main-header {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+h1 {
+	font-family: 'Akaya Telivigala', cursive;
+	font-size: 40px;
+	color:#224055;
+}
+#myImage {
+	margin-bottom: 20px;
+}
+#button-one, #button-two {
+	margin: 15px 15px 15px 15px;
+	background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)
+}
+#button-one, #button-two {
+	margin: 35px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;            
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	display: block;
+	}
+	
+	#button-one:hover {
+		background-position: right center; /* change the direction of the change here */
+		color: #fff;
+		text-decoration: none;
+	}
+	#button-two:hover {
+		background-position: right center; /* change the direction of the change here */
+		color: #fff;
+		text-decoration: none;
+	}
+h2 {
+	font-family: 'Akaya Telivigala', cursive;
+	font-size: 25px;
+	color:#224055;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+@media all and (max-width:500px) {
+	#myImage {
+		width: 300px;
+	}
+	h1 {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 17px;
+	}
+	#button-one, #button-two {
+		margin: 10px 10px 10px 10px;
+		padding: 10px 40px;
+
+	}
+}
+
+@media all and (max-width:300px) {
+	#myImage {
+		width: 220px;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	h2 {
+		font-size: 13px;
+	}
+	#button-one, #button-two {
+		margin: 5px 5px 5px 5px;
+		padding: 10px 30px;
+
+	}
+}
